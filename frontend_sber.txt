@@ -82,11 +82,70 @@ word_2 = "стол"
 решение 1:
 (word_1.length > word_2.length) ? console.log(word_1) : console.log(word_2);
 
-решение 1:
+решение 2:
 
 if (word_1.length > word_2.length){
  console.log(word_1);
 }
 else{
  console.log(word_2);
+}
+
+
+задача 4.4
+
+
+В программе объявлены две переменные — temp и weather. Объявите переменную activity и присвойте ей значение по следующему правилу:
+если значение переменной temp больше либо равно 25, a переменная weather имеет значение "clear", тогда значение переменной activity должно быть "golf";
+если значение переменной temp от 10 до 24, a переменная weather имеет значение "clear", тогда значение переменной activity должно быть "bowling";
+в ином случае значение переменной activity должно быть "hiking".
+
+Пример значений переменных:
+temp = 25
+
+weather = "clear"
+
+Пример результата:
+"golf"
+
+решение:
+let activity = ""
+if(temp>=25 && weather == "clear"){
+ activity = "golf";
+ }
+else if(temp>=10 && temp < 25 && weather == "clear"){
+ activity = "bowling";
+ }
+else if(temp < 10 || weather != "clear"){
+ activity = "hiking";
+}
+
+задача 4.6
+
+В программе объявлена переменная task, в которой записано одно из строковых значений: удалить, переименовать, редактировать. Напишите программу, которая выводит в консоль:
+
+delete – при значении task – удалить;
+rename – при значении task – переименовать;
+edit – при значении task – редактировать.
+
+Пример значений переменных:
+task = "переименовать"
+
+Пример результата:
+"rename"
+
+решение :
+switch(task) {
+  case "удалить":
+  
+ console.log('delete');
+  break;
+   case "переименовать":
+ console.log ("rename");
+  break;
+   case "редактировать":
+  
+  console.log ('edit');
+    break;
+
 }
